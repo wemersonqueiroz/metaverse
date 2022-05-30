@@ -560,6 +560,11 @@ li {
   margin-right: 1.5rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mt-12 {
   margin-top: 3rem;
 }
@@ -574,6 +579,10 @@ li {
 
 .ml-6 {
   margin-left: 1.5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .flex {
@@ -867,6 +876,10 @@ li {
 }
 
 @media (min-width: 768px) {
+  .md\:ml-auto {
+    margin-left: auto;
+  }
+
   .md\:flex {
     display: flex;
   }
