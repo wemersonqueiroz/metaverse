@@ -1,9 +1,9 @@
 import Images from "../images/Images"
 const Hero = () => {
   return (
-    <>
-      <div className="mt-12  flex flex-col md:flex-row relative items-center justify-center ">
-        <div className="flex flex-col mx-auto max-w-sm md:max-w-lg items-left">
+    <main>
+      <div className="mt-12  flex flex-col md:flex-row relative text-left items-center justify-center ">
+        <div className="flex flex-col max-w-sm md:max-w-lg items-left ">
           <h1 className="text-4xl font-extrabold">
             Let's explore your own{" "}
             <span className="text-clrPrimaryRed">metaverse</span> world.
@@ -23,21 +23,19 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        {/* <div className="flex flex-col absolute right-0"> */}
-        <div className="ml-6">
+        <div className="md:ml-auto">
           <img
             className="flex flex-col max-w-sm mt-6 border-2 p-4 rounded-tr-xl rounded-tl-3xl rounded-br-3xl rounded-bl-xl border-clrPrimaryRed "
             src="../src/images/meta1.png"
             alt=""
           />
         </div>
-        {/* </div> */}
       </div>
-      <p className="text-center mt-12 text-2xl font-bold">
+      <p className="text-center mt-12 text-2xl font-bold w-1/2 mx-auto">
         Let's explore your own{" "}
         <span className="text-clrPrimaryRed">metaverse</span> world.{" "}
       </p>
-    </>
+    </main>
   )
 }
 
