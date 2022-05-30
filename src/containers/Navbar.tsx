@@ -1,10 +1,10 @@
 const Navbar = () => {
   return (
-    <div className="flex flex-row items-center w-full justify-center">
-      <h1 className="text-clrPrimaryRed justify-start">
+    <header className="relative flex flex-row items-center w-full justify-center top-0 my-6">
+      <h1 className="text-clrPrimaryRed text-xl font-bold absolute left-0">
         UNDA<span className="text-clrText">.Quest</span>
       </h1>
-      <nav className="flex flex-row items-center space-x-36 mx-auto">
+      <nav className="hidden flex-row items-center md:flex md:space-x-3">
         <a href="#" className="">
           About Us
         </a>
@@ -18,10 +18,10 @@ const Navbar = () => {
           Resources
         </a>
       </nav>
-      <button className="text-clrPrimaryRed px-8 py-2 border-clrPrimaryRed border-2 rounded-xl bg-transparent">
+      <button className="text-clrPrimaryRed absolute right-0 px-8 py-2 border-clrPrimaryRed border-2 rounded-xl bg-transparent">
         Sign Up
       </button>
-    </div>
+    </header>
   )
 }
 

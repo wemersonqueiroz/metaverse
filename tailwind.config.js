@@ -33,6 +33,10 @@ module.exports = {
       transitionProperty: {
         width: "width",
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        urbanist: ["Urbanist", "sans-serif"],
+      },
     },
   },
   plugins: [],
