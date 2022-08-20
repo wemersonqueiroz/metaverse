@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import {
   BsFillCreditCard2BackFill,
   BsFillImageFill,
@@ -8,75 +8,41 @@ import {
   BsJoystick,
   BsKeyFill,
   BsShieldFillCheck,
-} from "react-icons/bs";
+} from "react-icons/bs"
 
 function Main() {
   const RenderCard = (props: any) => {
-    const [cardIcon, cardText] = props;
+    const { cardIcon, cardText } = props
     return (
       <>
         {" "}
-        <div className=" hover:bg-clrPrimaryRed text-center  hover:h-full relative hover:-top-20 items-center flex flex-col justify-center m-8 rounded-2xl hover:text-black text-white">
-          <div className="bg-clrPrimaryRed w-16 h-16 rounded text-black items-center flex justify-center">
+        <div className="text-center relative items-center flex flex-col justify-center m-8 hover:-top-10 hover:bg-clrPrimaryRed  hover:h-full rounded-2xl hover:first::hidden ">
+          <span className="text-2xl w-16 h-16 rounded-lg  items-center flex justify-center first bg-clrBackgroundPrimary text-clrPrimaryRed">
             {cardIcon}
-          </div>
-          <p className="text-sm mt-2">{cardText}</p>
+          </span>
+          <p className="text-sm mt-4 font-bold last text-white">{cardText}</p>
         </div>
       </>
-    );
-  };
+    )
+  }
   return (
     <>
-      <div className="mt-28 relative grid md:grid-cols-4 grid-rows-4 md:grid-rows-2 items-center justify-center bg-gray-900 h-[30rem] relative ">
+      <div className="h-full mt-28 rounded-2xl border-clrPrimaryRed border-l-4 border-t border-b grid md:grid-cols-4 grid-cols-4 md:grid-rows-2 items-center justify-center bg-clrPrimaryRed/5 md:h-[30rem] relative">
         <RenderCard
-          cardIcon={
-            <BsFillCreditCard2BackFill className="text-3xl rounded  " />
-          }
+          cardIcon={<BsFillCreditCard2BackFill />}
           cardText={"Payment"}
         />
-        <p className="text-sm mt-2">Payment</p>
+
+        <RenderCard cardIcon={<BsFillImageFill />} cardText={"NFTs"} />
+        <RenderCard cardIcon={<BsBagFill />} cardText={"Shopping"} />
+        <RenderCard cardIcon={<BsBadgeVrFill />} cardText={"Imersion"} />
+        <RenderCard cardIcon={<BsChatRightTextFill />} cardText={"Messaging"} />
+        <RenderCard cardIcon={<BsJoystick />} cardText={"Games"} />
+        <RenderCard cardIcon={<BsKeyFill />} cardText={"Security"} />
+        <RenderCard cardIcon={<BsShieldFillCheck />} cardText={"Privacy"} />
       </div>
-      <div className=" hover:bg-clrPrimaryRed text-center  hover:h-full relative hover:-top-20 items-center flex flex-col justify-center m-8 rounded-2xl hover:text-black text-white">
-        <BsFillImageFill className="text-3xl rounded  " />
-        <p className="text-sm mt-2">NFT</p>
-      </div>
-      <div className=" hover:bg-clrPrimaryRed text-center  hover:h-full relative hover:-top-20 items-center flex flex-col justify-center m-8 rounded-2xl hover:text-black text-white">
-        <BsBagFill className="text-3xl rounded  " />
-        <p className="text-s  m mt-2">Shopping</p>
-      </div>
-      <div className=" hover:bg-clrPrimaryRed text-center  hover:h-full relative hover:-top-20 items-center flex flex-col justify-center m-8 rounded-2xl hover:text-black text-white">
-        <BsBadgeVrFill className="text-3xl rounded  " />
-        <p className="text-sm mt-2">3D Reality</p>
-      </div>
-      <div className=" hover:bg-clrPrimaryRed text-center  hover:h-full relative hover:-top-20 items-center flex flex-col justify-center m-8 rounded-2xl hover:text-black text-white">
-        <BsChatRightTextFill className="text-3xl rounded  " />
-        <p className="text-sm mt-2">Messaging</p>
-      </div>
-      <div className=" hover:bg-clrPrimaryRed text-center  hover:h-full relative hover:-top-20 items-center flex flex-col justify-center m-8 rounded-2xl hover:text-black text-white">
-        <BsJoystick className="text-3xl rounded  " />
-        <p
-          className="text-s
-  m mt-2"
-        >
-          Gaming
-        </p>
-      </div>
-      <div className=" hover:bg-clrPrimaryRed text-center  hover:h-full relative hover:-top-20 items-center flex flex-col justify-center m-8 rounded-2xl hover:text-black text-white">
-        <BsKeyFill className="text-3xl rounded  " />
-        <p
-          className="text-sm
-   mt-2"
-        >
-          Security
-        </p>
-      </div>
-      <div className=" hover:bg-clrPrimaryRed text-center  hover:h-full relative hover:-top-20 items-center flex flex-col justify-center m-8 rounded-2xl hover:text-black text-white">
-        <BsShieldFillCheck className="text-3xl rounded  " />
-        <p className="text-sm mt-2">Privacy</p>
-      </div>
-      Main
     </>
-  );
+  )
 }
 
-export default Main;
+export default Main

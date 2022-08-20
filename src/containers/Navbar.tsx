@@ -1,10 +1,10 @@
 const Navbar = () => {
   return (
-    <header className="relative flex flex-row items-center w-full justify-center top-0 my-6">
+    <header className="relative flex flex-row items-center w-full justify-center py-8">
       <h1 className="text-clrPrimaryRed text-xl font-bold absolute left-0">
         UNDA<span className="text-clrText">.Quest</span>
       </h1>
-      <nav className="hidden flex-row items-center md:flex md:space-x-3">
+      <nav className="hidden flex-row items-center md:flex md:space-x-3 gap-x-2">
         <a href="#" className="">
           About Us
         </a>

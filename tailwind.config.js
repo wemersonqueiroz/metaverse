@@ -37,9 +37,14 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         urbanist: ["Urbanist", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
-        josefin: ["Josefin","sans-serif"]
+        josefin: ["Josefin", "sans-serif"],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant("child", "& > *")
+      addVariant("child-hover", "& > *:hover")
+    },
+  ],
 }
