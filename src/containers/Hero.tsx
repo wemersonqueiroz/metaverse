@@ -3,9 +3,9 @@ import { BsPlayCircle } from "react-icons/bs"
 const Hero = () => {
   return (
     <main>
-      <div className="container mx-auto mt-40  flex flex-col md:flex-row relative text-left items-center justify-center gap-x-4 ">
+      <div className="container mx-auto md:mt-28 mt-20  flex flex-col md:flex-row relative text-left items-center justify-center gap-x-4 ">
         <div className="flex flex-col md:max-w-lg items-center md:items-left ">
-          <h1 className="text-2xl md:text-4xl font-extrabold text-center  md:text-left">
+          <h1 className="text-xl md:text-4xl font-black text-center  md:text-left">
             Let's explore your own{" "}
             <span className="text-clrPrimaryRed">metaverse</span> world.
           </h1>
@@ -33,7 +33,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <p className="text-center mt-24 text-2xl md:text-4xl font-black mx-auto">
+      <p className="text-center mt-24 text-xl md:text-4xl font-black mx-auto">
         Let's explore your own{" "}
         <span className="text-clrPrimaryRed">metaverse</span> world.{" "}
       </p>

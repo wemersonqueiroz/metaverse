@@ -27,7 +27,7 @@ function Main() {
   }
   return (
     <>
-      <div className="h-full mt-28 rounded-2xl border-clrPrimaryRed/20 border-l-2 border-t-4 border-b border-r-2 grid md:grid-cols-4 grid-cols-2 md:grid-rows-2 items-center justify-center bg-gray-900/5 md:h-[30rem] relative">
+      <div className="h-full mt-28 md:mt-20 rounded-2xl border-clrPrimaryRed/20 border-l-2 border-t-4 border-b border-r-2 grid md:grid-cols-4 grid-cols-2 md:grid-rows-2 items-center justify-center bg-gray-900/5 md:h-[30rem] relative">
         <RenderCard
           cardIcon={<BsFillCreditCard2BackFill />}
           cardText={"Payment"}
