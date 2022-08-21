@@ -3,13 +3,13 @@ import { BsPlayCircle } from "react-icons/bs"
 const Hero = () => {
   return (
     <main>
-      <div className="mt-40  flex flex-col md:flex-row relative text-left items-center justify-center gap-x-4 ">
-        <div className="flex flex-col max-w-sm md:max-w-lg items-left ">
-          <h1 className="text-4xl font-extrabold">
+      <div className="container mx-auto mt-40  flex flex-col md:flex-row relative text-left items-center justify-center gap-x-4 ">
+        <div className="flex flex-col md:max-w-lg items-center md:items-left ">
+          <h1 className="text-2xl md:text-4xl font-extrabold text-center  md:text-left">
             Let's explore your own{" "}
             <span className="text-clrPrimaryRed">metaverse</span> world.
           </h1>
-          <p className="mt-6 font-light text-left">
+          <p className="mt-6 font-light text-justify px-4 md:pr-8 md:text-left">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Architecto, veritatis maxime nesciunt nostrum voluptas doloremque
             obcaecati odio magni. Vel ex minima omnis voluptas commodi est,
@@ -27,13 +27,13 @@ const Hero = () => {
         </div>
         <div className="mt-20 md:mt-0 md:ml-auto border-2 border-clrPrimaryRed rounded-bl-lg rounded-tr-lg rounded-br-3xl rounded-tl-3xl relative">
           <img
-            className="flex flex-col max-w-sm relative -top-5 -left-5"
+            className="flex flex-col w-full md:max-w-md md:w-full relative -top-5 -left-5"
             src={Meta}
             alt=""
           />
         </div>
       </div>
-      <p className="text-center mt-24 text-4xl font-black w-1/2 mx-auto">
+      <p className="text-center mt-24 text-2xl md:text-4xl font-black mx-auto">
         Let's explore your own{" "}
         <span className="text-clrPrimaryRed">metaverse</span> world.{" "}
       </p>

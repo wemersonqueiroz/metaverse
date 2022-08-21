@@ -17,7 +17,7 @@ function Main() {
       <>
         {" "}
         <div className="text-center relative items-center flex flex-col justify-center m-8 hover:-top-10 hover:bg-clrPrimaryRed  hover:h-full rounded-2xl hover:first::hidden ">
-          <span className="text-2xl w-16 h-16 rounded-lg  items-center flex justify-center first bg-clrBackgroundPrimary text-clrPrimaryRed">
+          <span className="text-2xl w-16 h-16 rounded-lg  items-center flex justify-center first bg-clrBackgroundPrimary text-clrPrimaryRed border-t-4 border-l-2 border-r-2 border-clrPrimaryRed/20">
             {cardIcon}
           </span>
           <p className="text-sm mt-4 font-bold last text-white">{cardText}</p>
@@ -27,7 +27,7 @@ function Main() {
   }
   return (
     <>
-      <div className="h-full mt-28 rounded-2xl border-clrPrimaryRed border-l-4 border-t border-b grid md:grid-cols-4 grid-cols-4 md:grid-rows-2 items-center justify-center bg-clrPrimaryRed/5 md:h-[30rem] relative">
+      <div className="h-full mt-28 rounded-2xl border-clrPrimaryRed/20 border-l-2 border-t-4 border-b border-r-2 grid md:grid-cols-4 grid-cols-2 md:grid-rows-2 items-center justify-center bg-gray-900/5 md:h-[30rem] relative">
         <RenderCard
           cardIcon={<BsFillCreditCard2BackFill />}
           cardText={"Payment"}
