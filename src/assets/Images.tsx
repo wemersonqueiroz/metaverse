@@ -1,5 +1,5 @@
 const Images = {
-  Meta: "./meta.png",
+  Meta: "Meta.png",
 }
 
 export default Images

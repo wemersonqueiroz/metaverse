@@ -1,3 +1,4 @@
+import Meta from "../assets/Meta.png"
 import { BsPlayCircle } from "react-icons/bs"
 const Hero = () => {
   return (
@@ -27,7 +28,7 @@ const Hero = () => {
         <div className="mt-20 md:mt-0 md:ml-auto border-2 border-clrPrimaryRed rounded-bl-lg rounded-tr-lg rounded-br-3xl rounded-tl-3xl relative">
           <img
             className="flex flex-col max-w-sm relative -top-5 -left-5"
-            src="/Images/meta.png"
+            src={Meta}
             alt=""
           />
         </div>
